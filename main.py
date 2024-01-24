@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 
-dataset = pd.read_csv("D:/MACHINE LEARNING PROJECTS/BREAST CANCER DETECTION BY LOGISTIC REGRESSION/breast_cancer.csv")
+dataset = pd.read_csv("D:/MACHINE LEARNING PROJECTS/Breast-Cancer-Detection-Using-Logistic-Regression/breast_cancer.csv")
 X= dataset.iloc[:,1:-1]
 y = dataset.iloc[:,-1]
 
