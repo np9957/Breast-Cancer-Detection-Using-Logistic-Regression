@@ -13,9 +13,10 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 
 
-'''from sklearn.model_selection import LogisticRegression
-classifier = LogisticRegression(random_state = 0)'''
-
+'''from sklearn.linear_model import LogisticRegression
+classifier = LogisticRegression(random_state = 0)
+classifier.fit(X_train,y_train)
+'''
 from sklearn.linear_model import LinearRegression
 classifier = LinearRegression()
 classifier.fit(X_train,y_train)
@@ -28,7 +29,7 @@ e=float(input("Single Epithelial Cell Size: "))
 f=float(input("Bare Nuclei: "))
 g=float(input("Bland Chromatin: "))
 h=float(input("Normal Nucleoli: "))
-i=float(input("Mito ses: "))
+i=float(input("Mitoses: "))
 
 y_pred = classifier.predict([[a,b,c,d,e,f,g,h,i]])
 print(y_pred)
