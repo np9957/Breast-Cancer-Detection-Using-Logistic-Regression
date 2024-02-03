@@ -13,13 +13,13 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 
 
-'''from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LogisticRegression
 classifier = LogisticRegression(random_state = 0)
 classifier.fit(X_train,y_train)
-'''
-from sklearn.linear_model import LinearRegression
+
+"""from sklearn.linear_model import LinearRegression
 classifier = LinearRegression()
-classifier.fit(X_train,y_train)
+classifier.fit(X_train,y_train)"""
 
 a=float(input("Clump Thickness: "))
 b=float(input("Uniformity of Cell Size: "))
